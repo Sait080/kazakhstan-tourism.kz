@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Қазақстан - Саяхаттың орны</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-mountain"></i>
+                <span>Qazaqstan</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Басты бет</a></li>
+                <li><a href="#destinations">Туристік нысандар</a></li>
+                <li><a href="#cities">Қалалар</a></li>
+                <li><a href="#nature">Табиғат</a></li>
+                <li><a href="#about">Біз туралы</a></li>
+                <li><a href="#contact">Байланыс</a></li>
+            </ul>
+            <div class="lang-switch">
+                <button onclick="setLang('kz')">KZ</button>
+                <button onclick="setLang('ru')">RU</button>
+                <button onclick="setLang('en')">EN</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Қазақстан</h1>
+            <p class="hero-subtitle">Табиғаттың ғажайыптары мен мәдениеттің тоғысқан жері</p>
+            <p class="hero-description">Алатаудың шыңдарынан Каспий теңізіне дейін, тарихи қалалардан заманауи мегаполистерге дейін - Қазақстан сізді күтуде!</p>
+            <div class="hero-buttons">
+                <a href="#destinations" class="btn btn-primary">Туристік нысандарды көру</a>
+                <a href="#contact" class="btn btn-secondary">Байланысу</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <h3 class="counter" data-target="3.8">0</h3>
+                    <p>миллионнан астам турист</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 class="counter" data-target="19">0</h3>
+                    <p>курорттық аймақ</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-city"></i>
+                    <h3 class="counter" data-target="5">0</h3>
+                    <p>танымал қала</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-mountain"></i>
+                    <h3 class="counter" data-target="130">0</h3>
+                    <p>миллиард теңге табыс</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Туристік нысандар</h2>
+                <p class="section-subtitle">Қазақстанның ең танымал туристік жерлері</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Барлығы</button>
+                <button class="filter-btn" data-filter="nature">Табиғат</button>
+                <button class="filter-btn" data-filter="city">Қалалар</button>
+                <button class="filter-btn" data-filter="history">Тарихи</button>
+            </div>
+
+            <div class="destinations-grid">
+                <!-- Almaty -->
+                <div class="destination-card" data-category="city">
+                    <div class="card-image">
+                        <img src="https://radioiskatel.ru/wp-content/uploads/2024/09/02aa6e81ed05465f446bb1ecefa0647d_original.280018.jpg" alt="Алматы">
+                        <div class="card-overlay">
+                            <span class="card-category">Қала</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Алматы</h3>
+                        <p>Қазақстандың ең ірі қаласы, Тәуелсіздік монументі, Көктөбе, Медеу мұз айдыны және Шымбұлақ тау шаңғысы курортымен танымал.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-users"></i> 1M+ турист</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <a href="almaty.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Astana -->
+                <div class="destination-card" data-category="city">
+                    <div class="card-image">
+                        <img src="https://www.akorda.kz/public/assets/media/uploadMedia/1722433944_photo_5282947874914688832_y.jpg" alt="Астана">
+                        <div class="card-overlay">
+                            <span class="card-category">Қала</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Астана</h3>
+                        <p>Елорда қаласы, Бәйтерек, Хан Шатыр, Нұр Әлем және заманауи архитектуралық кешендерімен танымал.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-users"></i> 677K+ турист</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <a href="astana.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Charyn Canyon -->
+                <div class="destination-card" data-category="nature">
+                    <div class="card-image">
+                        <img src="https://el.kz/upload/medialibrary/049/049983fe4a4667668d659a169834861e.jpg" alt="Шарын шатқалы">
+                        <div class="card-overlay">
+                            <span class="card-category">Табиғат</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Шарын шатқалы</h3>
+                        <p>«Қазақтың Гранд Каньоны» - 154 шақырым ұзындықтағы керемет табиғи ескерткіш, қызыл-қоңыр жартастарымен ерекшеленеді.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-ruler-horizontal"></i> 154 км</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <a href="charyn.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Big Almaty Lake -->
+                <div class="destination-card" data-category="nature">
+                    <div class="card-image">
+                        <img src="https://kaz.tengrinews.kz/userdata/map/3db21d3f6dc35fe84b87d532c59767a0.jpeg" alt="Үлкен Алматы көлі">
+                        <div class="card-overlay">
+                            <span class="card-category">Табиғат</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Үлкен Алматы көлі</h3>
+                        <p>Теңіз деңгейінен 2510 метр биіктікте орналасқан таулы көл. Көкпеңбек суы мен айналасындағы таулар керемет көрініс береді.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-mountain"></i> 2510 м</span>
+                            <span><i class="fas fa-star"></i> 5.0</span>
+                        </div>
+                        <a href="almaty-lake.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Burabay -->
+                <div class="destination-card" data-category="nature">
+                    <div class="card-image">
+                        <img src="https://burabayresort.kz/storage/catalog/product/HkFLRlH2NHc8KdFRtbdieNE90lH7mw42pu5uhbXY.jpeg" alt="Бурабай">
+                        <div class="card-overlay">
+                            <span class="card-category">Табиғат</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Бурабай</h3>
+                        <p>«Қазақстанның Швейцариясы» - көгілдір көлдер, жасыл ормандар және таза ауасымен танымал курортты аймақ.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-users"></i> 227K+ турист</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <a href="burabay.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Shymkent -->
+                <div class="destination-card" data-category="city">
+                    <div class="card-image">
+                        <img src="https://welcome.kz/ru/assets/images/products/0_gallery/locations/turkestan/shymkent/new-mosque2.jpeg" alt="Шымкент">
+                        <div class="card-overlay">
+                            <span class="card-category">Қала</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Шымкент</h3>
+                        <p>2200 жылдық тарихы бар көне қала, қонақжайлылығы, тарихи жерлері және сауықтыру шипажайларымен танымал.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-users"></i> 252K+ турист</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <a href="shymkent.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Turkistan -->
+                <div class="destination-card" data-category="history">
+                    <div class="card-image">
+                        <img src="https://egemen.kz/media/2023/05/11/skrinshot-11-05-2023-223942.jpg" alt="Түркістан">
+                        <div class="card-overlay">
+                            <span class="card-category">Тарихи</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Түркістан</h3>
+                        <p>Түркі әлемінің рухани астанасы, Қожа Ахмет Ясауи кесенесі және бай тарихи мұрасымен танымал.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-history"></i> 1500+ жыл</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <a href="turkistan.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Alakol -->
+                <div class="destination-card" data-category="nature">
+                    <div class="card-image">
+                        <img src="https://egemen.kz/article_photo/1527650860_article_b.jpeg" alt="Алакөл">
+                        <div class="card-overlay">
+                            <span class="card-category">Табиғат</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Алакөл</h3>
+                        <p>Қара тасты жағажайлары бар әлемдегі жалғыз көл. Емдік балшығы мен таза суымен танымал демалыс орны.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-users"></i> 205K+ турист</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <a href="alakol.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Mangystau -->
+                <div class="destination-card" data-category="nature">
+                    <div class="card-image">
+                        <img src="https://abai.kz/content/uploads/2024/05/fec808c0bc52c44891a5a6ef8502b50a.jpg" alt="Маңғыстау">
+                        <div class="card-overlay">
+                            <span class="card-category">Табиғат</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Маңғыстау</h3>
+                        <p>Бозжыра шатқалы, Торыш шарлар алқабы, Бекет ата жерасты мешіті - ерекше табиғи ландшафттарымен танымал.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-users"></i> 356K+ турист</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <a href="mangystau.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Kolsai -->
+                <div class="destination-card" data-category="nature">
+                    <div class="card-image">
+                        <img src="https://7kun.kz/uploads/posts/1718888190_fkWamNHmreXEIhpVzVEvMmWnzAX_yQ__/image/compressed.jpeg" alt="Көлсай">
+                        <div class="card-overlay">
+                            <span class="card-category">Табиғат</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Көлсай көлдері</h3>
+                        <p>Алатаудың бөктеріндегі үш таулы көлден тұратын табиғи кешен. 1800 метр биіктікте орналасқан інжу-маржан.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-mountain"></i> 1800 м</span>
+                            <span><i class="fas fa-star"></i> 5.0</span>
+                        </div>
+                        <a href="kolsai.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Katon Karagay -->
+                <div class="destination-card" data-category="nature">
+                    <div class="card-image">
+                        <img src="https://e-history.kz/images/w500/media/upload/72/2013/08/12/747cec75d8bad36a6a8536d90642e4c5.jpg" alt="Катон-Қарағай">
+                        <div class="card-overlay">
+                            <span class="card-category">Табиғат</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Катон-Қарағай</h3>
+                        <p>Қазақстандағы ең ірі ұлттық табиғи парк, ЮНЕСКО қорғауындағы Алтайдың жүрегі, Белуха тауының керемет көріністері.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-mountain"></i> 4506 м</span>
+                            <span><i class="fas fa-star"></i> 5.0</span>
+                        </div>
+                        <a href="katon-karagay.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Altai -->
+                <div class="destination-card" data-category="nature">
+                    <div class="card-image">
+                        <img src="https://www.airpano.ru/files/kazakhstan-altyn-emel/images/image1.jpg" alt="Алтын-Емел">
+                        <div class="card-overlay">
+                            <span class="card-category">Табиғат</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Алтын-Емел</h3>
+                        <p>Қазақстанның ең үлкен қорықтарының бірі. Әнші құм, Бесшатыр қорғандары және тасқа қашалған суреттерімен танымал.</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-ruler-combined"></i> 4600 км²</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <a href="altyn-emel.html" class="card-link">Толығырақ <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section class="cities" id="cities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Танымал қалалар</h2>
+                <p class="section-subtitle">Қазақстанның туристік қалалары</p>
+            </div>
+            
+            <div class="cities-slider">
+                <div class="city-slide active">
+                    <div class="city-image">
+                        <img src="https://radioiskatel.ru/wp-content/uploads/2024/09/02aa6e81ed05465f446bb1ecefa0647d_original.280018.jpg" alt="Алматы">
+                    </div>
+                    <div class="city-info">
+                        <h3>Алматы</h3>
+                        <p>Қазақстанның оңтүстік астанасы, табиғатының сұлулығымен және заманауи инфрақұрылымымен танымал. 2024 жылдың бірінші жартыжылдығында 1 070 358 турист қабылдады.</p>
+                        <ul class="city-features">
+                            <li><i class="fas fa-check"></i> Көктөбе - қаланың панорамасы</li>
+                            <li><i class="fas fa-check"></i> Медеу мұз айдыны</li>
+                            <li><i class="fas fa-check"></i> Шымбұлақ тау шаңғысы курорты</li>
+                            <li><i class="fas fa-check"></i> Зенков соборы</li>
+                        </ul>
+                        <a href="almaty.html" class="btn btn-primary">Толығырақ көру</a>
+                    </div>
+                </div>
+                
+                <div class="city-slide">
+                    <div class="city-image">
+                        <img src="https://www.akorda.kz/public/assets/media/uploadMedia/1722433944_photo_5282947874914688832_y.jpg" alt="Астана">
+                    </div>
+                    <div class="city-info">
+                        <h3>Астана</h3>
+                        <p>Қазақстанның елордасы, заманауи архитектура мен инновациялық технологиялардың орталығы. 2024 жылы 677 218 турист келді.</p>
+                        <ul class="city-features">
+                            <li><i class="fas fa-check"></i> Бәйтерек монументі</li>
+                            <li><i class="fas fa-check"></i> Хан Шатыр</li>
+                            <li><i class="fas fa-check"></i> Нұр Әлем (EXPO)</li>
+                            <li><i class="fas fa-check"></i> Астана Опера</li>
+                        </ul>
+                        <a href="astana.html" class="btn btn-primary">Толығырақ көру</a>
+                    </div>
+                </div>
+                
+                <div class="city-slide">
+                    <div class="city-image">
+                        <img src="https://welcome.kz/ru/assets/images/products/0_gallery/locations/turkestan/shymkent/new-mosque2.jpeg" alt="Шымкент">
+                    </div>
+                    <div class="city-info">
+                        <h3>Шымкент</h3>
+                        <p>2200 жылдық тарихы бар көне қала, қонақжайлылығымен және оңтүстік мінезімен ерекшеленеді. 252 919 турист қабылдады.</p>
+                        <ul class="city-features">
+                            <li><i class="fas fa-check"></i> Сайрам ауданы - тарихи жер</li>
+                            <li><i class="fas fa-check"></i> Абай саябағы</li>
+                            <li><i class="fas fa-check"></i> Дендросаябақ</li>
+                            <li><i class="fas fa-check"></i> Қажымұқан стадионы</li>
+                        </ul>
+                        <a href="shymkent.html" class="btn btn-primary">Толығырақ көру</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="slider-btn next" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nature Section -->
+    <section class="nature" id="nature">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Табиғаттың ғажайыптары</h2>
+                <p class="section-subtitle">Қазақстанның керемет табиғи ландшафттары</p>
+            </div>
+            
+            <div class="nature-grid">
+                <div class="nature-item large">
+                    <a href="charyn.html">
+                        <img src="https://el.kz/upload/medialibrary/049/049983fe4a4667668d659a169834861e.jpg" alt="Шарын шатқалы">
+                        <div class="nature-overlay">
+                            <h3>Шарын шатқалы</h3>
+                            <p>Қазақтың Гранд Каньоны</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="nature-item">
+                    <a href="almaty-lake.html">
+                        <img src="https://kaz.tengrinews.kz/userdata/map/3db21d3f6dc35fe84b87d532c59767a0.jpeg" alt="Үлкен Алматы көлі">
+                        <div class="nature-overlay">
+                            <h3>Үлкен Алматы көлі</h3>
+                            <p>Таулы інжу-маржан</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="nature-item">
+                    <a href="burabay.html">
+                        <img src="https://burabayresort.kz/storage/catalog/product/HkFLRlH2NHc8KdFRtbdieNE90lH7mw42pu5uhbXY.jpeg" alt="Бурабай">
+                        <div class="nature-overlay">
+                            <h3>Бурабай</h3>
+                            <p>Қазақстанның Швейцариясы</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="nature-item">
+                    <a href="kolsai.html">
+                        <img src="https://7kun.kz/uploads/posts/1718888190_fkWamNHmreXEIhpVzVEvMmWnzAX_yQ__/image/compressed.jpeg" alt="Көлсай">
+                        <div class="nature-overlay">
+                            <h3>Көлсай көлдері</h3>
+                            <p>Таулы көлдер кешені</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="nature-item">
+                    <a href="mangystau.html">
+                        <img src="https://abai.kz/content/uploads/2024/05/fec808c0bc52c44891a5a6ef8502b50a.jpg" alt="Маңғыстау">
+                        <div class="nature-overlay">
+                            <h3>Маңғыстау</h3>
+                            <p>Ерекше ландшафттар</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Неліктен Қазақстан?</h2>
+                    <p>Қазақстан - бұл табиғаттың ғажайыптары мен бай тарихы тоғысқан ел. Бізде әр турист өзіне ұнайтын нәрсені таба алады:</p>
+                    <ul class="about-list">
+                        <li>
+                            <i class="fas fa-mountain"></i>
+                            <div>
+                                <h4>Табиғаттың сұлулығы</h4>
+                                <p>Алатаудың қарлы шыңдарынан бастап, Каспий теңізінің жағалауына дейін</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-landmark"></i>
+                            <div>
+                                <h4>Бай тарихи мұра</h4>
+                                <p>Сақ және түркі дәуірлерінен қалған ескерткіштер</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Қонақжайлылық</h4>
+                                <p>Қазақ халқының дәстүрлі қонақжайлылығы</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-utensils"></i>
+                            <div>
+                                <h4>Ұлттық асханалар</h4>
+                                <p>Бешбармақ, қуырдақ, бауырсақ және тағы басқалары</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-image" style="position:relative; overflow:hidden; border-radius:16px; min-height:380px;">
+    <iframe 
+        width="100%" 
+        height="100%" 
+        src="Video Project.mp4" 
+        title="Қазақстан - Табиғаттың ғажайыбы" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen
+        style="position:absolute; top:0; left:0; width:100%; height:100%; min-height:380px; border-radius:16px;">
+    </iframe>
+</div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Бізбен байланысыңыз</h2>
+                <p class="section-subtitle">Саяхатыңызды жоспарлауға көмектесеміз</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p>+7 (777) 777-77-77</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>kazakhstan-tourism.kz</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Мекенжай</h4>
+                            <p>Алматы қаласы, Қазақстан</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Аты-жөніңіз" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Телефон">
+                    </div>
+                    <div class="form-group">
+                        <select id="destination" required>
+                            <option value="">Қызықтыратын бағытты таңдаңыз</option>
+                            <option value="almaty">Алматы</option>
+                            <option value="astana">Астана</option>
+                            <option value="shymkent">Шымкент</option>
+                            <option value="charyn">Шарын шатқалы</option>
+                            <option value="burabay">Бурабай</option>
+                            <option value="turkistan">Түркістан</option>
+                            <option value="alakol">Алакөл</option>
+                            <option value="mangystau">Маңғыстау</option>
+                            <option value="kolsai">Көлсай</option>
+                            <option value="other">Басқа</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Хабарламаңыз" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Жіберу</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-mountain"></i>
+                        <span>Qazaqstan</span>
+                    </div>
+                    <p>Қазақстан - табиғаттың ғажайыптары мен мәдениеттің тоғысқан жері. Бізбен бірге саяхаттаңыз!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Тез сілтемелер</h4>
+                    <ul>
+                        <li><a href="#home">Басты бет</a></li>
+                        <li><a href="#destinations">Туристік нысандар</a></li>
+                        <li><a href="#cities">Қалалар</a></li>
+                        <li><a href="#nature">Табиғат</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Туристік нысандар</h4>
+                    <ul>
+                        <li><a href="almaty.html">Алматы</a></li>
+                        <li><a href="astana.html">Астана</a></li>
+                        <li><a href="charyn.html">Шарын шатқалы</a></li>
+                        <li><a href="burabay.html">Бурабай</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Байланыс</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +7 (777) 777-77-77</li>
+                        <li><i class="fas fa-envelope"></i> kazakhstan-tourism.kz</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Алматы, Қазақстан</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Қазақстан Туризмі. Барлық құқықтар қорғалған.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

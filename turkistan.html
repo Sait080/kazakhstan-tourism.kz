@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Түркістан - Қазақстан Туризмі</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mountain"></i>
+                <span>Qazaqstan</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Басты бет</a></li>
+                <li><a href="index.html#destinations" class="active">Туристік нысандар</a></li>
+                <li><a href="index.html#cities">Қалалар</a></li>
+                <li><a href="index.html#nature">Табиғат</a></li>
+                <li><a href="index.html#about">Біз туралы</a></li>
+                <li><a href="index.html#contact">Байланыс</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="detail-hero" style="background-image: url('images/turkistan.jpg');">
+        <div class="detail-hero-overlay"></div>
+        <div class="detail-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Басты бет</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="index.html#destinations">Тарихи нысандар</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Түркістан</span>
+            </div>
+            <h1>Түркістан</h1>
+            <p>Түркі әлемінің рухани астанасы</p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <i class="fas fa-history"></i>
+                    <span>1500+ жыл</span>
+                </div>
+                <div class="hero-stat">
+                    <i class="fas fa-star"></i>
+                    <span>4.9 рейтинг</span>
+                </div>
+                <div class="hero-stat">
+                    <i class="fas fa-mosque"></i>
+                    <span>ЮНЕСКО</span>
+                </div>
+            </div>
+            <a href="#book" class="btn btn-primary btn-large">Тур брондау</a>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="detail-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-main">
+                    <h2>Түркістан туралы</h2>
+                    <p>Түркістан — Қазақстандағы ең көне қалалардың бірі, 1500 жылдан астам тарихы бар. Қожа Ахмет Ясауи кесенесі — қаланың басты нысаны, 14 ғасырда Темірлан бұйрығымен салынған. 2003 жылы ЮНЕСКО-ның Әлемдік мұра тізіміне енгізілді.</p>
+                    <p>Түркістан түркі әлемінің рухани орталығы болып саналады. Қожа Ахмет Ясауи — түркі суфизмінің негізін қалаушы, оның кесенесі мұсылмандар үшін қасиетті орын болып табылады.</p>
+                    
+                    <div class="features-section">
+                        <h3>Негізгі ерекшеліктер</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-mosque"></i>
+                                <h4>ЮНЕСКО мұрасы</h4>
+                                <p>Әлемдік мәдени мұра тізіміне енген</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-history"></i>
+                                <h4>Тарихи маңыздылық</h4>
+                                <p>1500+ жылдық бай тарих</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-praying-hands"></i>
+                                <h4>Рухани орталық</h4>
+                                <p>Түркі әлемінің қасиетті жері</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-palette"></i>
+                                <h4>Сәулет өнері</h4>
+                                <p>Уникалды исламдық архитектура</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-sidebar">
+                    <div class="sidebar-card">
+                        <h4>Қала туралы ақпарат</h4>
+                        <ul class="info-list">
+                            <li><span>Халық саны:</span> 170 000</li>
+                            <li><span>Құрылғаны:</span> 500 жыл бұрын</li>
+                            <li><span>Облыс:</span> Түркістан облысы</li>
+                            <li><span>Аумағы:</span> 200 км²</li>
+                            <li><span>Климаты:</span> Континентті</li>
+                            <li><span>Статусы:</span> ЮНЕСКО</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h4>Ауа райы</h4>
+                        <div class="weather-widget">
+                            <div class="weather-main">
+                                <i class="fas fa-sun"></i>
+                                <span class="temp">+30°C</span>
+                            </div>
+                            <p>Жазда +28...+38°C</p>
+                            <p>Қыста 0...-10°C</p>
+                            <p>Ең жақсы уақыт: Наурыз-Мамыр, Қыркүйек-Қазан</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h4>Бағалар</h4>
+                        <ul class="price-list">
+                            <li><span>Кесенеге кіру:</span> Тегін</li>
+                            <li><span>Экскурсия:</span> 5000-10000 тг</li>
+                            <li><span>Қонақ үй:</span> 8000-30000 тг</li>
+                            <li><span>Тамақ:</span> 3000-8000 тг</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="attractions">
+        <div class="container">
+            <h2 class="section-title">Танымал жерлер</h2>
+            
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="images/yasawi.jpg" alt="Қожа Ахмет Ясауи кесенесі">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Қожа Ахмет Ясауи кесенесі</h3>
+                        <p>14 ғасырда салынған керемет кесене. Көк күмбездері, күрделі өрнектерімен танымал.</p>
+                        <div class="attraction-meta">
+                            <span><i class="fas fa-clock"></i> 09:00-18:00</span>
+                            <span><i class="fas fa-ticket-alt"></i> Тегін</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="images/turkistan.jpg" alt="Түркістан көне қалашығы">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Көне қалашық</h3>
+                        <p>Түркістанның тарихи орталығы. Көне қорғандар, мазарлар, сарайлар.</p>
+                        <div class="attraction-meta">
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                            <span><i class="fas fa-ticket-alt"></i> Тегін</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="images/turkistan.jpg" alt="Әзірет Сұлтан музейі">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Әзірет Сұлтан музейі</h3>
+                        <p>Түркістан тарихы мен мәдениетінің бай мұрасы. Археологиялық табылдыстар.</p>
+                        <div class="attraction-meta">
+                            <span><i class="fas fa-clock"></i> 09:00-18:00</span>
+                            <span><i class="fas fa-ticket-alt"></i> 500 тг</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="images/turkistan.jpg" alt="Түркістан көне мешіті">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Көне мешіт</h3>
+                        <p>19 ғасырда салынған мешіт. Дәстүрлі қазақ сәулет өнерінің үлгісі.</p>
+                        <div class="attraction-meta">
+                            <span><i class="fas fa-clock"></i> Намаз уақытында</span>
+                            <span><i class="fas fa-ticket-alt"></i> Тегін</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="images/turkistan.jpg" alt="Түркістан базары">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Көне базар</h3>
+                        <p>Дәстүрлі шығыс базары. Қолөнер бұйымдары, специялар, кілемдер.</p>
+                        <div class="attraction-meta">
+                            <span><i class="fas fa-clock"></i> 08:00-20:00</span>
+                            <span><i class="fas fa-ticket-alt"></i> Тегін</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="images/turkistan.jpg" alt="Түркістан сауда орталығы">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Түркістан көне сарайы</h3>
+                        <p>Қазақ хандарының резиденциясы. Тарихи экспонаттар, мұражай.</p>
+                        <div class="attraction-meta">
+                            <span><i class="fas fa-clock"></i> 10:00-17:00</span>
+                            <span><i class="fas fa-ticket-alt"></i> 1000 тг</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="activities-section" style="padding: 80px 0; background: var(--light-color);">
+        <div class="container">
+            <h2 class="section-title">Тарихи фактілер</h2>
+            <div class="features-grid" style="margin-top: 40px;">
+                <div class="feature-item">
+                    <i class="fas fa-landmark"></i>
+                    <h4>500 жыл</h4>
+                    <p>Қала ресми түрде 500 жыл бұрын құрылған</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-crown"></i>
+                    <h4>Темірлан</h4>
+                    <p>Кесенені Ұлы Темірлан бұйыртқан</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-globe"></i>
+                    <h4>ЮНЕСКО</h4>
+                    <p>2003 жылы Әлемдік мұра тізіміне енді</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-book"></i>
+                    <h4>Ясауи</h4>
+                    <p>Қожа Ахмет Ясауи - түркі суфизмінің негізін қалаушы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Картадағы орналасуы</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23258.123456789!2d68.3!3d43.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE4JzAwLjAiTiA2OMKwMTgnMDAuMCJF!5e0!3m2!1sen!2skz!4v1704067200000!5m2!1sen!2skz"
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 20px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Фотогалерея</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="images/turkistan.jpg" alt="Түркістан">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/yasawi.jpg" alt="Ясауи кесенесі">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/turkistan.jpg" alt="Көне қалашық">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/turkistan.jpg" alt="Көк күмбез">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/turkistan.jpg" alt="Мешіт">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="book">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-text">
+                    <h2>Түркістанға саяхатты брондаңыз</h2>
+                    <p>Біз сізге тамаша демалыс ұйымдастыруға көмектесеміз. Экскурсиялар, қонақ үйлер, трансфер - бәрін бізге тапсырыңыз!</p>
+                    <ul class="booking-features">
+                        <li><i class="fas fa-check-circle"></i> Тегін консультация</li>
+                        <li><i class="fas fa-check-circle"></i> Жеке турлар</li>
+                        <li><i class="fas fa-check-circle"></i> Топтық жеңілдіктер</li>
+                        <li><i class="fas fa-check-circle"></i> 24/7 қолдау</li>
+                    </ul>
+                </div>
+                <form class="booking-form" id="bookingForm">
+                    <h3>Тур брондау</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Аты-жөні</label>
+                            <input type="text" placeholder="Аты-жөніңіз" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон</label>
+                            <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Адам саны</label>
+                            <select required>
+                                <option value="">Таңдаңыз</option>
+                                <option value="1">1 адам</option>
+                                <option value="2">2 адам</option>
+                                <option value="3-5">3-5 адам</option>
+                                <option value="6+">6+ адам</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Келетін күні</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Кететін күні</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Қосымша тілектер</label>
+                        <textarea rows="3" placeholder="Қосымша ақпарат..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Брондау</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Туристердің пікірлері</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Айгүл Нұрланова</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Кесене керемет! Архитектураға таң қалдым. Рухани орын, міндетті түрде барыңыз. Экскурсия өте қызықты болды.</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Мұхаммед Али</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Түркістан мұсылмандар үшін қасиетті орын. Ясауи бабамыздың кесенесіне зиярат еттім. Өте әсерлі!</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Сара Джонсон</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>ЮНЕСКО тізіміне енген орынды көру керемет тәжірибе! Көк күмбездер керемет сұлу. Фотосессияға таптырмайды!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Section -->
+    <section class="related-section">
+        <div class="container">
+            <h2 class="section-title">Ұқсас нысандар</h2>
+            <div class="related-grid">
+                <a href="almaty.html" class="related-card">
+                    <img src="images/almaty.jpg" alt="Алматы">
+                    <h4>Алматы</h4>
+                </a>
+                <a href="shymkent.html" class="related-card">
+                    <img src="images/shymkent.jpg" alt="Шымкент">
+                    <h4>Шымкент</h4>
+                </a>
+                <a href="astana.html" class="related-card">
+                    <img src="images/astana.jpg" alt="Астана">
+                    <h4>Астана</h4>
+                </a>
+                <a href="burabay.html" class="related-card">
+                    <img src="images/burabay.jpg" alt="Бурабай">
+                    <h4>Бурабай</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-mountain"></i>
+                        <span>Qazaqstan</span>
+                    </div>
+                    <p>Қазақстан - табиғаттың ғажайыптары мен мәдениеттің тоғысқан жері.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Тез сілтемелер</h4>
+                    <ul>
+                        <li><a href="index.html#home">Басты бет</a></li>
+                        <li><a href="index.html#destinations">Туристік нысандар</a></li>
+                        <li><a href="index.html#cities">Қалалар</a></li>
+                        <li><a href="index.html#contact">Байланыс</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Байланыс</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +7 (777) 777-77-77</li>
+                        <li><i class="fas fa-envelope"></i> kazakhstan-tourism.kz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Қазақстан Туризмі. Барлық құқықтар қорғалған.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>
